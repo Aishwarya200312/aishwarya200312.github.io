@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aishwarya S — MCA Student | Software Developer</title>
+  <meta name="description" content="Portfolio of Aishwarya S — MCA student: projects in Computer Vision, Deep Learning, React.js, and Full-stack development." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0f6cf2;--muted:#6b7280;--bg:#0f1724;--card:#fff;--glass:rgba(255,255,255,0.06)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#0b1220;background:linear-gradient(180deg,#f7fbff 0%,#ffffff 100%)}
+    .container{max-width:1000px;margin:36px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6c63ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:26px}
+    .sub{color:var(--muted);margin-top:6px}
+    .links{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{padding:8px 12px;border-radius:8px;text-decoration:none;border:1px solid rgba(11,18,32,0.06);background:white;display:inline-flex;gap:8px;align-items:center;font-weight:600}
+    main{display:grid;grid-template-columns:1fr 320px;gap:28px;margin-top:28px}
+    .card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(15,20,32,0.06)}
+    .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .tech-list{display:flex;flex-wrap:wrap;gap:8px}
+    .tech{border:1px solid rgba(15,20,32,0.2);padding:5px 9px;border-radius:6px;font-size:13px;background-color:#f9fafb}
+    .project{border-left:4px solid rgba(15,108,242,0.06);padding:12px;margin-bottom:12px;border-radius:8px}
+    .project h4{margin:0 0 6px 0}
+    .muted{color:var(--muted);font-size:14px}
+    aside{position:relative}
+    .contact-list{display:flex;flex-direction:column;gap:8px}
+    footer{text-align:center;margin-top:28px;color:var(--muted);font-size:13px}
+    @media (max-width:900px){main{grid-template-columns:1fr} .links{margin-left:0}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">AS</div>
+      <div>
+        <h1>Aishwarya S</h1>
+        <div class="sub">MCA Student | Aspiring Software Developer — Mysuru</div>
+        <div class="muted" style="margin-top:8px">Core: Python • Java • Full-stack development • Computer Vision</div>
+      </div>
+      <div class="links">
+        <a class="btn" href="https://www.linkedin.com/in/aishwarya-s-4a37912b9/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn" href="https://github.com/Aishwarya200312" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn" href="./26.pdf" download>Download Resume</a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="card">
+          <div class="section-title"><h3>About</h3><span class="muted">MCA @ VVCE (8.7 CGPA)</span></div>
+          <p>
+            I am an MCA student with strong foundations in programming and hands-on experience building projects in computer vision, deep learning and full-stack web development. I enjoy converting research ideas into working systems and learning new tools each semester.
+          </p>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <div class="section-title"><h3>Projects</h3><span class="muted">My Works</span></div>
+
+          <div class="project">
+            <h4>Eye Movement-Based Mouse Cursor Control</h4>
+            <div class="muted">Tools: Python • OpenCV • MediaPipe • NumPy • PyAutoGUI</div>
+            <p>
+              A hands-free cursor control system that tracks eye landmarks and maps gaze direction to screen coordinates. Built with MediaPipe for robust landmark detection and OpenCV for preprocessing and calibration. Includes smoothing, blink detection for click events, and a calibration routine to adapt to different camera positions.
+            </p>
+            <div class="tech-list">
+              <span class="tech">Computer Vision</span>
+              <span class="tech">MediaPipe</span>
+              <span class="tech">OpenCV</span>
+              <span class="tech">Python</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <h4>Image → Caption Generator (CV + NLP)</h4>
+            <div class="muted">Tools: Python • CNN Encoder • RNN/Transformer Decoder • PyTorch/TensorFlow</div>
+            <p>
+              An image captioning pipeline combining a convolutional encoder for image features with a language decoder (LSTM or Transformer). Trained on a custom dataset and fine-tuned using cross-entropy and CIDEr evaluation. Demonstrates end-to-end model training, attention visualization and simple beam search for better captions.
+            </p>
+            <div class="tech-list"><span class="tech">Deep Learning</span><span class="tech">NLP</span><span class="tech">PyTorch/TensorFlow</span></div>
+          </div>
+
+          <div class="project">
+            <h4>Deep Learning (Image Processing) using CNN</h4>
+            <div class="muted">Tools: Python • Keras • Data Augmentation • Transfer Learning</div>
+            <p>
+              Classification and detection experiments using CNNs. Implemented transfer learning with pre-trained backbones, monitored training with metrics and confusion matrices, and evaluated robustness with augmentation and cross-validation.
+            </p>
+            <div class="tech-list"><span class="tech">CNNs</span><span class="tech">Keras</span><span class="tech">Model Evaluation</span></div>
+          </div>
+
+          <div class="project">
+            <h4>Front-end Web Development (React.js) — Internship</h4>
+            <div class="muted">Company: Scontinent Technologies — Front-end tasks, component-driven UI</div>
+            <p>
+              Worked on building reusable React components, state management with hooks, and REST API integration. Implemented responsive layouts and component documentation. Gained experience in Git-based collaboration workflows.
+            </p>
+            <div class="tech-list"><span class="tech">React.js</span><span class="tech">HTML/CSS</span><span class="tech">Git</span></div>
+          </div>
+
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <div class="section-title"><h3>Education</h3><span class="muted">Academic record</span></div>
+          <ul>
+            <li><strong>MCA</strong> — Vidyavardhaka College of Engineering (VTU), Mysuru (2025–Present) — 8.7 CGPA</li>
+            <li><strong>BCA</strong> — Seshadripuram Degree College (UOM), Mysuru (2024) — 9.7 CGPA</li>
+            <li>PUC (2021) — 85% • SSLC (2019) — 75.46%</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <div class="section-title"><h3>Achievements & Certifications</h3><span class="muted">Courses & activities</span></div>
+          <ul>
+            <li>Completed Basic HTML course — Coursera (2025)</li>
+            <li>Internship Certifications — Deep Learning & Web Development (2024)</li>
+            <li>Python Certification — CDAC (2024)</li>
+            <li>Volunteer — Blood Donation Camp (2024)</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card">
+          <div class="section-title"><h3>Skills</h3><span class="muted">Technical & personal</span></div>
+          <div class="tech-list">
+            <span class="tech">Java</span>
+            <span class="tech">Python</span>
+            <span class="tech">DBMS</span>
+            <span class="tech">Full-stack</span>
+            <span class="tech">HTML & CSS</span>
+            <span class="tech">OpenCV</span>
+            <span class="tech">Machine Learning</span>
+          </div>
+
+          <div style="margin-top:14px">
+            <div class="section-title"><h3>Contact</h3></div>
+            <div class="contact-list">
+              <div><strong>Email:</strong> <a href="mailto:aishwaryalatha6@gmail.com">aishwaryalatha6@gmail.com</a></div>
+              <div><strong>Phone:</strong> +91-8310487635</div>
+              <div><strong>Location:</strong> Hebbal, Mysuru</div>
+              <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aishwarya-s-4a37912b9/" target="_blank" rel="noopener noreferrer">View profile</a></div>
+              <div><strong>GitHub:</strong> <a href="https://github.com/Aishwarya200312" target="_blank" rel="noopener noreferrer">@Aishwarya200312</a></div>
+            </div>
+          </div>
+
+          <div style="margin-top:14px">
+            <div class="section-title"><h3>Languages & Hobbies</h3></div>
+            <div class="muted">Kannada • English</div>
+            <div style="margin-top:8px" class="muted">Hobbies: Singing, Painting</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h4 style="margin-top:0">Ready to deploy</h4>
+          <p class="muted" style="font-size:14px">This single-file portfolio is ready for GitHub Pages / Netlify. Replace the <code>./26.pdf</code> resume link with your hosted resume URL or keep the file in the same folder when deploying.</p>
+          <a class="btn" href="https://pages.github.com/" target="_blank" rel="noopener noreferrer" style="margin-top:8px;display:inline-block">GitHub Pages guide</a>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      Built by Aishwarya S — MCA Student • Updated: 26 Oct 2025
+    </footer>
+  </div>
+</body>
+</html>
